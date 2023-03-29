@@ -15,22 +15,22 @@
         </div>
         <div>
           <h1>Dodoc Alexandru</h1>
-          <h2>Programator @ INDUSTRIAL SOFTWARE</h2>
+          <h2 id="job-title">Programator @ INDUSTRIAL SOFTWARE</h2>
         </div>
       </div>
 
       <ul id="top-menu-bar">
         <li>
-          <a href="">Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a href="">Skills</a>
+          <a href="#" onclick="showSkills()">Skills</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#">Projects</a>
         </li>
         <li>
-          <a href="">Languages</a>
+          <a href="#">Languages</a>
         </li>
       </ul>
     </header>
@@ -53,9 +53,14 @@
         </section>
         <section>M2</section>
       </div>
-      <div id="main">Main</div>
+      <div id="main">
+        <div class="page" id="home">HOME content</div>
+        <div class="page" id="skills">SKILLS content</div>
+        <div class="page" id="projects">Projects ...</div>
+        <div class="page" id="languages">Languages ...</div>
+      </div>
     </section>
-    <script src="examples.js"></script>
+    <script src="index.js"></script>
     <footer>
       <a href="">Linkedin</a>
     </footer>
