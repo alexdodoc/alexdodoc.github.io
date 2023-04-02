@@ -10,10 +10,10 @@
   <body>
     <header>
       <div id="header-wrapper">
-        <div>
+        <div id="my-picture">
           <img src="poza.jpg" alt="Selfie" height="100" />
         </div>
-        <div>
+        <div id="info-details">
           <h1>Dodoc Alexandru</h1>
           <h2 id="job-title">Programator @ INDUSTRIAL SOFTWARE</h2>
         </div>
@@ -37,21 +37,35 @@
 
     <section id="content">
       <div id="side-menu">
-        <section>
+        <section>M2</section>
+        <section id="section-email">
           <form action="" method="get">
-            <label for="userEmail">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="userEmail"
-              placeholder="example@me.com"
-              required
-            />
-
+            <h2>Contact me</h2>
+            <div>
+              <label for="userName">Name</label>
+              <input type="text" name="Name" id="userName" required />
+            </div>
+            <div>
+              <label for="userEmail">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="userEmail"
+                placeholder="example@me.com"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                rows="3"
+                cols="45"
+                name="message"
+                placeholder="Enter message here..."
+              ></textarea>
+            </div>
             <button type="submit">Send</button>
           </form>
         </section>
-        <section>M2</section>
       </div>
       <div id="main">
         <div class="page" id="home">HOME content</div>
@@ -62,7 +76,9 @@
     </section>
     <script src="index.js"></script>
     <footer>
-      <a href="">Linkedin</a>
+      <a href="https://www.linkedin.com/in/alexandru-dodoc-287114a0/"
+        >LinkedIn</a
+      >
     </footer>
   </body>
 </html>
