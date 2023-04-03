@@ -52,7 +52,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.endorcements {
+  color: gray;
+}
 .page {
   flex: 1;
   background-color: white;
