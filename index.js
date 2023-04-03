@@ -1,6 +1,6 @@
-var activePage = "home";
+var activePage = "skills";
 
-document.getElementById(activePage).style.display = "block";
+show(activePage);
 
 function hide(id) {
   document.getElementById(id).style.display = "none";
@@ -28,3 +28,14 @@ document.querySelector("#top-menu-bar").addEventListener("click", function (e) {
     showPage(id);
   }
 });
+
+function showSkills() {
+  var skills = ["HTML", "CSS", "JS"];
+  var container = document.querySelector("#skills ul");
+  console.info(container);
+  skills.forEach(function (skill) {
+    container.innerHTML += `<li>${skill}</li>`;
+  });
+}
+
+showSkills();
