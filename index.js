@@ -3,7 +3,29 @@ var activePage = "home";
 document.getElementById(activePage).style.display = "block";
 
 function showSkills() {
-  console.warn("te rog afiseaza skills");
   document.getElementById("home").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("languages").style.display = "none";
   document.getElementById("skills").style.display = "block";
+}
+
+function showHome() {
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("languages").style.display = "none";
+  document.getElementById("home").style.display = "block";
+}
+
+function showProjects() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("languages").style.display = "none";
+  document.getElementById("projects").style.display = "block";
+}
+
+function showLanguages() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("languages").style.display = "block";
 }
