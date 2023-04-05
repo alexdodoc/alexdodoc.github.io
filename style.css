@@ -102,10 +102,12 @@ h1 {
   margin: 2px 0;
 }
 
+#top-menu-bar a.active,
 #top-menu-bar a:hover {
   color: #334455;
   background: #fff;
 }
+
 footer {
   background-color: #58a9c9;
   padding: 10px 10px 8px 10px;
