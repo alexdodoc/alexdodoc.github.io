@@ -37,14 +37,9 @@ function showSkills(skills) {
   //   return a.name.localeCompare(b.name);
   // });
   var html = skills.map(function (skill) {
-    var cls = "";
-    if (skills.endorcements > 10) {
-      cls = 'class="important"';
-    }
+    var cls = skill.endorcements > 10 ? 'class="important"' : "";
     return `<li ${cls}>${skill.name} - <span class="endorcements">${skill.endorcements}</span></li>`;
   });
-  //console.warn(html);
-
   var container = document.querySelector("#skills ul");
   container.innerHTML = html.join("");
 }
