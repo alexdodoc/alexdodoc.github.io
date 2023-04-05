@@ -52,9 +52,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.endorcements {
-  color: gray;
-}
+
 .page {
   flex: 1;
   background-color: white;
@@ -128,4 +126,16 @@ footer a:hover {
   background-color: #4499bb;
   border-radius: 5px;
   color: white;
+}
+
+.endorcements {
+  color: gray;
+}
+
+li.important {
+  font-weight: bold;
+}
+
+li.important .endorcements {
+  color: green;
 }
