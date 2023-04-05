@@ -29,29 +29,24 @@ document.querySelector("#top-menu-bar").addEventListener("click", function (e) {
   }
 });
 
-function showSkills() {
-  var skills = [
-    {
-      name: "HTML",
-      endorcements: 5,
-    },
-    {
-      name: "CSS",
-      endorcements: 10,
-    },
-    {
-      name: "JS",
-      endorcements: 15,
-    },
-  ];
-
+function showSkills(skills) {
   var html = skills.map(function (skill) {
     return `<li>${skill.name} - <span class="endorcements">${skill.endorcements}</span></li>`;
   });
-  console.warn(html);
+  //console.warn(html);
 
   var container = document.querySelector("#skills ul");
   container.innerHTML = html.join("");
 }
 
-showSkills();
+fetch("skills.json")
+  .then(function (r) {
+    return r.json();
+    //  r.json().then(function (r2) {
+    //    console.warn("r2", r2);
+    //  });
+  })
+  .then(function (skills) {
+    // console.warn("r3", skills);
+    showSkills(skills);
+  });
